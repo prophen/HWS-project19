@@ -12,6 +12,8 @@
 		E6A1389C1D60322300F1D375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A1389A1D60322300F1D375 /* Main.storyboard */; };
 		E6A1389E1D60322300F1D375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6A1389D1D60322300F1D375 /* Assets.xcassets */; };
 		E6A138A11D60322300F1D375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A1389F1D60322300F1D375 /* LaunchScreen.storyboard */; };
+		E6A138A91D60336100F1D375 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A138A81D60336100F1D375 /* MapKit.framework */; };
+		E6A138AB1D60342D00F1D375 /* Capital.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A138AA1D60342D00F1D375 /* Capital.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		E6A1389D1D60322300F1D375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6A138A01D60322300F1D375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6A138A21D60322300F1D375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6A138A81D60336100F1D375 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E6A138AA1D60342D00F1D375 /* Capital.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Capital.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A138A91D60336100F1D375 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,7 @@
 		E6A1388A1D60322300F1D375 = {
 			isa = PBXGroup;
 			children = (
+				E6A138A81D60336100F1D375 /* MapKit.framework */,
 				E6A138951D60322300F1D375 /* HWS-project19 */,
 				E6A138941D60322300F1D375 /* Products */,
 			);
@@ -60,6 +66,7 @@
 				E6A1389D1D60322300F1D375 /* Assets.xcassets */,
 				E6A1389F1D60322300F1D375 /* LaunchScreen.storyboard */,
 				E6A138A21D60322300F1D375 /* Info.plist */,
+				E6A138AA1D60342D00F1D375 /* Capital.swift */,
 			);
 			path = "HWS-project19";
 			sourceTree = "<group>";
@@ -96,6 +103,11 @@
 				TargetAttributes = {
 					E6A138921D60322300F1D375 = {
 						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -137,6 +149,7 @@
 			files = (
 				E6A138991D60322300F1D375 /* ViewController.swift in Sources */,
 				E6A138971D60322300F1D375 /* AppDelegate.swift in Sources */,
+				E6A138AB1D60342D00F1D375 /* Capital.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
